@@ -34,10 +34,10 @@ body {
   -webkit-text-size-adjust: 100%;
 }
 body {
-  font: 16px/1.6 'Raleway', Arial, Helvetica, sans-serif;
-  color: #fff;
-  text-align:center;
-  background: #222;
+    font: 16px/1.6 'Raleway', Arial, Helvetica, sans-serif;
+    color: #424245;
+    text-align: center;
+    background: #eeecee;
 }
 img {
   border: 0;
@@ -65,10 +65,12 @@ html {
   transition: all 0.4s ease;
 }
 a {
-  color: #fff;
-  text-decoration: none;
+    color: #313132;
+    text-decoration: none;
 }
-a:hover,
+a:hover {
+        color: #54335f;
+    }
 a:focus {
   color: #fff;
   outline: none;
@@ -81,6 +83,7 @@ a:focus {
 }
 p {
   margin: 0 0 20px;
+
 }
 h1,
 h2,
@@ -111,9 +114,10 @@ h5 {
   font-weight: 600;
 }
 h6 {
-  font-size: 18px;
-  margin-bottom: 10px;
-  font-weight: 600;
+    font-size: 18px;
+    margin-bottom: 10px;
+    font-weight: 600;
+   
 }
 #main {
   padding: 0;
@@ -140,10 +144,10 @@ video {
     content: '';
     opacity: 0.75;
     background: #4096ee; /* Old browsers */
-    background: -moz-linear-gradient(top, #283618 0%, #84a96c 100%); /* FF3.6-15 */
-    background: -webkit-linear-gradient(top, #283618 0%,#84a96c 100%); /* Chrome10-25,Safari5.1-6 */
-    background: linear-gradient(to bottom, #283618 0%,#84a96c 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#283618', endColorstr='#84a96c',GradientType=0 ); /* IE6-9 */
+    background: -moz-linear-gradient(top, #FFFFFF 0%, #FFFFFF 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, #FFFFFF 0%,#FFFFFF 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, #FFFFFF 0%,#FFFFFF 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FFFFFF', endColorstr='#FFFFFF',GradientType=0 ); /* IE6-9 */
     position: fixed;
     left: 0;
     top: 0;
@@ -162,6 +166,7 @@ video {
 }
 #fp-nav ul li a span {
  display: none;
+
 }
 
 .btn {
@@ -313,7 +318,7 @@ a#logo {
   font-weight: 700;
 }
 .navbar {
-  padding: 0;
+    padding: 0;
 }
 .navbar-toggle {
   display:none;
@@ -326,54 +331,67 @@ a#logo {
 .navbar-nav li {
   margin-left: 30px;
 }
+
+/* nav bar text color*/
 .navbar-nav li a {
-  color:#fff;
+  
   font-size: 15px;
   text-decoration:none;
   display:block;
   font-weight: 500;
   opacity: 0.9;
+  color:#000000;
 }
+/*nav bar under line color*/
 .navbar-nav li a:after {
   content:'';
   display:block;
   height: 2px;
-  background:#fff;
+  background: #000000;;
   -webkit-transition: all 0.4s ease;
   transition: all 0.4s ease;
   -webkit-transform:scale(0);
   transform:scale(0);
   margin-top: 4px;
 }
+
 .navbar-nav li a:hover:after, .navbar-nav li.active a:after{
   -webkit-transform:scale(1);
   transform:scale(1);
+  color:#000000;
+
 }
 .navbar-nav li a:hover {
   opacity: 1;
+  color:#4d454e;
+
 }
 .navbar-nav li.active a {
   opacity: 1;
+  color:#000000;
 }
 .collapse:not(.show) {
   display:block;
+  color:#000000;
 }
 
 /*==============================================
 03. SOCIAL ICONS CSS
 ================================================*/
 #social-icons {
-  padding:0;
-  position: fixed;
-  top: 50%;
-  transform: translateY(-50%);
-  right:0;
-  z-index: 199;
+    padding: 0;
+    position: fixed;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 0;
+    z-index: 199;
+    
 }
 .social-icons {
-  margin:0;
-  padding:0;
-  list-style:none;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    background-color: #4d454e;
 }
 .social-icons li {
   display: block;
@@ -408,11 +426,13 @@ a#logo {
   line-height: 1.2;
   letter-spacing: 0.02em;
 }
+
+/*paragraph under "Jhibkei text color*/
 .welcome-box p {
   max-width: 620px;
   width:100%;
   margin:0 auto 30px;
-  color: #fff;
+  color: #000000;
 }
 .welcome-title {
   font-weight: 700;
@@ -459,8 +479,8 @@ a#logo {
 }
 .about-img img {
   border-radius: 10px;
-  -webkit-box-shadow: 0 0 40px rgba(0,0,0,.3);
-  box-shadow: 0 0 40px rgba(0,0,0,.3);
+  /*-webkit-box-shadow: 0 0 40px rgba(0,0,0,.3);
+  box-shadow: 0 0 40px rgba(0,0,0,.3);*/
 }
 .about-contentbox {
   margin-top: 80px;
@@ -501,8 +521,8 @@ a#logo {
   opacity: 0.75;
 }
 .facts-list .item:hover {
-  background:#fff;
-  color:#1e1e1e;
+    background: rgba(0,0,0,0.25);
+   
 }
 .facts-list .owl-dots {
   margin-bottom: 30px;
@@ -527,10 +547,11 @@ a#logo {
   font-weight: 300;
 }
 .services-list .item {
-  background-color: rgba(250,250,250,0.25);
-  border-radius: 10px;
-  -webkit-transition: all 0.5s ease;
-  transition: all 0.5s ease;
+    background: rgba(0,0,0,0.25);
+    border-radius: 10px;
+    -webkit-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+
 }
 .service-icon {
   display:block;
@@ -543,8 +564,9 @@ a#logo {
   height:100%;
 }
 .services-list .item:hover {
-  background-color: #fff;
-  color: #1e1e1e;
+    background-color: rgba(0,0,0,0.25);
+   
+    color: #1e1e1e;
 }
 .service-box h3 {
   font-size:22px;
@@ -555,9 +577,11 @@ a#logo {
 }
 .service-box p:last-child {
   margin:0;
+
 }
 .owl-carousel .owl-dots .owl-dot {
   border-radius: 3px;
+
 }
 .owl-dots {
     display: -webkit-box;
@@ -574,7 +598,7 @@ a#logo {
     width: 12px;
     height: 12px;
     margin: 0 5px;
-    background: rgba(255, 255, 255, .2)
+    background: rgba(0, 0, 0, .2)
 }
 
 .owl-carousel .owl-dots .owl-dot:focus {
@@ -582,14 +606,15 @@ a#logo {
 }
 
 .owl-carousel .owl-dots .owl-dot.active {
-    background: #fff
+    background: #4d454e
 }
 
 /*==============================================
 07. WORK BLOCK CSS
 ================================================*/
 .gallery-section {
-  text-align: center;
+    text-align: center;
+    background: #ffffff;
 }
 .portfolio-item img {
   max-width: 100%;
@@ -597,6 +622,8 @@ a#logo {
   position: relative;
   z-index: 9;
   border-radius: 10px;
+  background: #ffffff;
+
 }
 .portfolio-item .thumb-inner {
   position: absolute;
@@ -611,11 +638,13 @@ a#logo {
   border-top-right-radius: 0px;
   -webkit-transition: all 0.4s ease;
   transition: all 0.4s ease;
+
 }
 .portfolio-item .thumb-inner h4 {
   margin-bottom: 0;
   font-size: 16px;
   margin-top: 0px;
+  
 }
 .portfolio-item .thumb-inner p {
   opacity: 0;
@@ -628,6 +657,7 @@ a#logo {
   opacity: 1;
   visibility: visible;
   color: #4a4a4a;
+
 }
 .portfolio-item:hover .thumb-inner {
   border-radius: 10px;
@@ -755,7 +785,7 @@ textarea.form-control {
   -ms-flex-align: center;
   align-items: center;
   margin-bottom: 30px;
-  background: rgba(250,250,250,0.25);
+  background: rgba(0,0,0,0.25);
   border-radius: 10px;
   padding: 30px;
   font-weight: 700;
@@ -773,7 +803,7 @@ textarea.form-control {
 09. TESTIMONOALS BLOCK CSS
 ================================================*/
 .testimonials-section .item {
-  background-color: rgba(250,250,250,0.25);
+  background-color: rgba(0,0,0,0.25);
   padding: 40px;
   border-radius: 10px;
 }
